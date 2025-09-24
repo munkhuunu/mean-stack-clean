@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MEAN Stack Clean Project
 
 This is a clean and modular full-stack web application built using the MEAN stack (MongoDB, Express.js, Angular, Node.js).
@@ -20,3 +21,6 @@ This is a clean and modular full-stack web application built using the MEAN stac
 npm install
 cd src
 npm install
+=======
+# mean-stack-clean
+>>>>>>> 21917dbb746c43e2ad904a7fd8b3893397eb9fe7
