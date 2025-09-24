@@ -1,0 +1,72 @@
+{
+  "name": "mean-stack-clean",
+  "version": "1.0.0",
+  "description": "Clean MEAN Stack Application - MongoDB, Express, Angular, Node.js",
+  "main": "server/app.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server": "node server/app.js",
+    "server:dev": "nodemon server/app.js",
+    "client": "cd client && ng serve --configuration development --port 4201",
+    "client:dev": "cd client && ng serve --configuration development --watch --port 4201",
+    "build": "cd client && ng build --configuration production",
+    "build:server": "echo 'Server build not needed'",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "install:all": "npm install",
+    "clean": "rm -rf node_modules dist && npm install"
+  },
+  "keywords": [
+    "mean-stack",
+    "mongodb",
+    "express",
+    "angular",
+    "nodejs",
+    "typescript",
+    "full-stack"
+  ],
+  "author": "MEAN Stack Developer",
+  "license": "MIT",
+  "dependencies": {
+    "@angular/animations": "^17.3.0",
+    "@angular/common": "^17.3.0",
+    "@angular/compiler": "^17.3.0",
+    "@angular/core": "^17.3.0",
+    "@angular/forms": "^17.3.0",
+    "@angular/platform-browser": "^17.3.0",
+    "@angular/platform-browser-dynamic": "^17.3.0",
+    "@angular/router": "^17.3.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.3",
+    "morgan": "^1.10.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.3"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^17.3.0",
+    "@angular/cli": "^17.3.0",
+    "@angular/compiler-cli": "^17.3.0",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20.14.15",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.4",
+    "typescript": "~5.4.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

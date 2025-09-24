@@ -1,0 +1,17 @@
+{
+  "/api/*": {
+    "target": "http://localhost:3000",
+    "secure": true,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  },
+  "/java-api/*": {
+    "target": "http://localhost:8080",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/java-api": ""
+    },
+    "logLevel": "debug"
+  }
+}

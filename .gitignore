@@ -1,0 +1,33 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# IDE settings
+.idea/
+.vscode/
+
+# Angular build output
+.angular/
+dist/
+
+# Environment files
+.env
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Compiled files
+*.js
+*.js.map
+*.tsbuildinfo
+
+# Coverage reports
+coverage/
+
+# Misc
+package-lock.json
