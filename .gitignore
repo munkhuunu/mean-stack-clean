@@ -22,7 +22,6 @@ dist/
 Thumbs.db
 
 # Compiled files
-*.js
 *.js.map
 *.tsbuildinfo
 
