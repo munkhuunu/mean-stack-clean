@@ -19,8 +19,9 @@ This is a clean and modular full-stack web application built using the MEAN stac
 ### Installation
 ```bash
 npm install
-cd src
-npm install
+cd client
+ng build
+
 =======
 # mean-stack-clean
 >>>>>>> 21917dbb746c43e2ad904a7fd8b3893397eb9fe7
